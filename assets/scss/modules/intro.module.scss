@@ -1,0 +1,17 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.content {
+  h3 {
+    text-shadow: 0px 0px 2px $text;
+  }
+  p {
+    font-weight: 700;
+  }
+
+  h3,
+  p {
+    color: $white;
+  }
+}

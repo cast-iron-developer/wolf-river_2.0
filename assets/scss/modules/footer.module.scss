@@ -1,0 +1,47 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.footer {
+  background-color: map-get($odie-pallet, color1);
+  color: $white;
+  .header {
+    text-align: center;
+
+    h6,
+    p {
+      margin: 0;
+    }
+  }
+  .navigation {
+    .navList {
+      display: flex;
+      flex-flow: row wrap;
+      padding-left: 0;
+
+      li {
+        list-style-type: none;
+        margin-bottom: 0.25rem;
+        li:not(first-of-type) {
+          padding-left: 2.25rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .odieBlurb {
+    text-align: center;
+
+    p {
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}

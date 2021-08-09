@@ -1,0 +1,59 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.resume {
+  display: grid;
+  grid-template-rows: minmax(60px, auto);
+  
+  @include breakpoints(really_big large desktop sm_desktop lg_tablet tablet) {
+    grid-template-columns: 1fr 3fr;
+    @include spacing(margin-two, 2rem, auto);
+    gap: 2rem;
+  }
+  @include breakpoints(nav mobile) {
+    grid-template-columns: 15px 1fr 15px;
+  }
+
+
+  .left,
+  .right {
+    align-self: baseline;
+    @include breakpoints(nav mobile) {
+      grid-column: 2;
+    }
+  }
+  .left {
+    @include breakpoints(really_big large desktop sm_desktop lg_tablet tablet) {
+      grid-column: 1;
+    }
+
+    @include breakpoints(nav mobile) {
+      h5 {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  .right {
+    @include breakpoints(really_big large desktop sm_desktop lg_tablet tablet) {
+      grid-column: 2;
+    }
+
+    .priorWorkTitle {
+      margin-bottom: 0;
+    }
+    .priorWorkDate {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      span {
+        @include spacing(padding-left, 1.5rem);
+      }
+    }
+  }
+}

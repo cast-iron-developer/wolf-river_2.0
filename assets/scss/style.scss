@@ -1,0 +1,19 @@
+@import './normalize.scss';
+
+@import './misc/misc.scss';
+@import './mixins/mixins.scss';
+@import './layout/layout.scss';
+@import './layout/font.scss';
+
+@import './modules/toggle.scss';
+@import './modules/accordion.scss';
+@import './parallax.scss';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

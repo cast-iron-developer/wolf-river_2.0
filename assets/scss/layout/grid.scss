@@ -1,0 +1,16 @@
+#body {
+  display: grid;
+  grid-template-areas:
+    "header" "header" "header"
+    "body" "body" "body"
+    "footer" "footer" "footer";
+  grid-template-rows: 0px auto auto;
+  background-color: $alt-white;
+}
+
+.main {
+  grid-area: body;
+  grid-column: 1/4;
+  padding-top: 70px;
+  background-color: $white;
+}

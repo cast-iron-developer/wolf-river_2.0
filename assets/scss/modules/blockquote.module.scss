@@ -1,0 +1,38 @@
+.BlockquoteContainer {
+  padding: 3rem;
+
+  .Blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #9b7653;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    quotes: "\201C""\201D""\2018""\2019";
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0,0,0, .65);
+  }
+  .Blockquote:before {
+    color: #9b7653;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  .Blockquote:after {
+    visibility: hidden;
+    content: close-quote;
+    position: absolute;
+  }
+
+  .Blockquote p:first-of-type {
+    display: inline;
+  }
+
+  .Caption {
+    margin-top: 0;
+    font-size: 90%;
+    text-align: right;
+    display: block;
+  }
+}

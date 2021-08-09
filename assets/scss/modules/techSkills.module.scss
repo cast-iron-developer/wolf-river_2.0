@@ -1,0 +1,22 @@
+@import '../misc/misc.scss';
+@import '../mixins/mixins.scss';
+@import '../layout/layout.scss';
+
+#tech-skills {
+  .col {
+    color: $white;
+
+
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+
+      .icon {
+        padding: 0 25px;
+        color: map-get($odie-pallet, color2)
+      }
+
+    }
+  };
+}

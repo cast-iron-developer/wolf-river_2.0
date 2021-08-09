@@ -1,0 +1,19 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.homeIntro {
+  grid-column: 2;
+  
+}
+.homeLeft {
+  color: $white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  grid-column: 2;
+
+  @include breakpoints(lg_tablet tablet nav mobile) {
+    grid-row: 2;
+  }
+}

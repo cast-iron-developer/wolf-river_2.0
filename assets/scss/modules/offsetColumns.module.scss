@@ -1,0 +1,33 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.offset {
+  display: grid;
+  gap: 4rem;
+  padding: 5rem 0;
+
+  @include breakpoints(really_big large desktop sm_desktop) {
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+  }
+  @include breakpoints(lg_tablet tablet nav mobile) {
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+
+#homeIntro {
+  background-image: url(../../images/homepage-intro-bg-large.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  &::after {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.25));
+    content: "";
+    width: 100vw;
+  }
+}
+#homeOffsetColumns {
+  background-color: map-get($odie-pallet, color4);
+}

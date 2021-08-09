@@ -1,0 +1,93 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+// https://gravitydept.com/blog/keyframe-animations-in-css-modules
+
+.homeTextOuter {
+  position: relative;
+  height: inherit;
+  animation: load;
+  animation-duration: 3s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+
+  .homeTextInner {
+    position: absolute;
+    width: max-content;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: map-get($odie-pallet, color4);
+    color: $white;
+    padding: 2rem;
+    border-radius: 15px 0 15px 0;
+    box-shadow: inset 0px 0px 10px 4px rgba($text, .75), inset 10px 0px 30px 10px rgba($text, .75);
+
+    .homeText {
+      max-width: 650px;
+    }
+  }
+}
+.flexContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-flow: row;
+  grid-column: 2;
+  justify-content: space-around;
+  margin: 90px 0;
+  gap: 0 2rem;
+
+  .innerContainer {
+    .iconLink {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+      padding: 1rem 0;
+
+      &:hover {
+        background-color: map-get($odie-pallet, color3);
+
+        .iconCaption,
+        .largeIcon {
+          color: $text;
+        }
+      }
+      .largeIcon {
+        font-size: 8rem;
+        color: $white;
+      }
+      .iconCaption {
+        color: $white;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.testing {
+  box-shadow: 15px 15px $white;
+}
+
+
+@keyframes load {
+  0% {
+    color: purple;
+    opacity: 0;
+    display: none;
+  }
+
+  50% {
+    color: green;
+  }
+
+  100% {
+    color: orange;
+    opacity: 1;
+  }
+}

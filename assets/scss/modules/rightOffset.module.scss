@@ -1,0 +1,13 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.homeRight {
+  @include breakpoints(really_big large desktop sm_desktop) {
+    grid-column: 3;
+  }
+  @include breakpoints(lg_tablet tablet nav mobile) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}

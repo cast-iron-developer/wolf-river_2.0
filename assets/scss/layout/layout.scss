@@ -1,0 +1,8 @@
+@import 'grid';
+@import 'header';
+
+.main {
+  &.home {
+    padding-top: 0;
+  }
+}
