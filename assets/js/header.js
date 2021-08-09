@@ -6,9 +6,6 @@ export function header() {
   const body = document.querySelector('body');
 
   menu_icon.addEventListener('click', (e) => {
-    console.log(e);
-    console.log(menu_btn.checked);
-    console.log(menu_btn);
     if(!body.classList.contains('no-scroll')){
       body.classList.add('no-scroll');
     } else {

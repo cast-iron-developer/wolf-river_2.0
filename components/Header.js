@@ -1,4 +1,5 @@
 import { header } from '../assets/js/header';
+import Image from 'next/image';
 import logo from "../assets/images/logo.png";
 import React from "react"
 
@@ -12,7 +13,7 @@ class Header extends React.PureComponent {
       <header id={`${this.props.originPage}-page`} className="main-header">
         <div className="logo">
           <a className="site-logo-link" href="/">
-            <img className="site-logo" src={logo} alt="Wolf River Psychology" />
+            <Image className="site-logo" width="200" height="70" layout="fixed" src={logo} alt="Wolf River Psychology" />
           </a>
         </div>
 
