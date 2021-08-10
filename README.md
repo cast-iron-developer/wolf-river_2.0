@@ -1,3 +1,7 @@
+# I made the change because Gatsby went from HERO to ZERO
+
+The first iteration of this version of the site was started with Gatsby V2 sometime last year. Due to life catching up with me, I worked on this site sporadically throughout the last calendar year. I took a couple of months off back in May/April. When I picked it back up a couple weeks ago, I decided to migrate to Gatsby V3. Unfortunately the breaking changes would have necessitate redoing a lot of my CSS Modules and online research into the exact issues I was facing resulted in little help. Rather than waste time chasing a goose, I opted to instead migrate to NextJS. That was 8/9/2021. At the time of this writing it is 8/10/2021 and the site is around 85-90% migrated. Gatsby, you're the worst.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
