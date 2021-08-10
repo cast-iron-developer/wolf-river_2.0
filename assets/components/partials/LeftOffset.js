@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classes from '../../assets/scss/modules/leftOffset.module.scss';
+import classes from '../../scss/modules/leftOffset.module.scss';
 
 const LeftOffset = ({ parent, children }) => {
   return (

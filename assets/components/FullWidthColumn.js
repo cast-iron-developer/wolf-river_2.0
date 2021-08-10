@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classes from '../assets/scss/modules/fullwidthcolumn.module.scss';
+import classes from '../scss/modules/fullwidthcolumn.module.scss';
 
 const FullWidthColumn = ({ children, sectionId }) => (
   <section id={classes.sectionId} className={classes.fullWidthCol}>

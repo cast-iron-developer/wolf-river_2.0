@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 import SingleColumn from './singleColumn';
 import classes from '../scss/modules/footer.module.scss';
 
@@ -19,10 +20,10 @@ const Footer = () => {
 
           <div className={classes.navigation}>
             <ul className={classes.navList}>
-              <li><a href="/professional-profile">Professional Profile</a></li>
-              <li><a href="/about-psychotherapy">About Psychotherapy</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link href="/profile"><a>Professional Profile</a></Link></li>
+              <li><Link href="/about"><a>About Psychotherapy</a></Link></li>
+              <li><Link href="/services"><a>Services</a></Link></li>
+              <li><Link href="/contact"><a>Contact</a></Link></li>
             </ul>
           </div>
 
