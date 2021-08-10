@@ -32,22 +32,28 @@ const Homepage = () => (
         <FullWidthColumn sectionId="homeServices">
           <div className={classes.flexContainer}>
             <div className={classes.innerContainer}>
-              <a className={classes.iconLink} href="/services#anxiety-disorders">
-                <SpaSharpIcon className={classes.largeIcon} />
-                <p className={`${classes.iconCaption} h1`}>Anxiety <br />Disorders</p>
-              </a>
+              <Link href="/services#anxiety-disorders" scroll={false}>
+                <a className={classes.iconLink}>
+                  <SpaSharpIcon className={classes.largeIcon} />
+                  <p className={`${classes.iconCaption} h1`}>Anxiety <br />Disorders</p>
+                </a>
+              </Link>
             </div>
             <div className={classes.innerContainer}>
-              <a className={classes.iconLink} href="/services#ocd">
-                <PermIdentityIcon className={classes.largeIcon} />
-                <p className={`${classes.iconCaption} h1`}>Obsessive <br />Compulsive Disorder</p>
-              </a>
+              <Link href="/services#ocd" scroll={false}>
+                <a className={classes.iconLink}>
+                  <PermIdentityIcon className={classes.largeIcon} />
+                  <p className={`${classes.iconCaption} h1`}>Obsessive <br />Compulsive Disorder</p>
+                </a>
+              </Link>
             </div>
             <div className={classes.innerContainer}>
-              <a className={classes.iconLink} href="/services#sleep-disorders">
-                <NightsStayIcon className={classes.largeIcon} />
-                <p className={`${classes.iconCaption} h1`}>Sleep <br />Disorders</p>
-              </a>
+              <Link href="/services#sleep-disorders" scroll={false}>
+                <a className={classes.iconLink}>
+                  <NightsStayIcon className={classes.largeIcon} />
+                  <p className={`${classes.iconCaption} h1`}>Sleep <br />Disorders</p>
+                </a>
+              </Link>
             </div>
           </div>
         </FullWidthColumn>

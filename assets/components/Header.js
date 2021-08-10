@@ -1,5 +1,6 @@
 import { header } from '../js/header';
 import Image from 'next/image';
+import Link from 'next/link';
 import logo from "../images/logo.png";
 import React from "react"
 
@@ -12,9 +13,11 @@ class Header extends React.PureComponent {
     return (
       <header id={`${this.props.originPage}-page`} className="main-header">
         <div className="logo">
-          <a className="site-logo-link" href="/">
-            <Image className="site-logo" width="200" height="70" layout="fixed" src={logo} alt="Wolf River Psychology" />
-          </a>
+          <Link href="/">
+            <a className="site-logo-link">
+              <Image className="site-logo" width="200" height="70" layout="fixed" src={logo} alt="Wolf River Psychology" />
+            </a>
+          </Link>
         </div>
 
         <input type="checkbox" id="menu-btn" className="menu-btn" />
@@ -24,24 +27,32 @@ class Header extends React.PureComponent {
         <nav className="nav-links">
           <ul>
             <li className="nav-link">
-              <a href="/professional-profile">
-                Profile
-             </a>
+              <Link href="/professional-profile">
+                <a>
+                  Profile
+               </a>
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="/about-psychotherapy">
-                About
-            </a>
+              <Link href="/about-psychotherapy">
+                <a>
+                  About
+              </a>
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="/services">
-                Services
-            </a>
+              <Link href="/services">
+                <a>
+                  Services
+              </a>
+              </Link>
             </li>
             <li className="nav-link">
-              <a href="/contact">
-                Contact
-            </a>
+              <Link href="/contact">
+                <a>
+                  Contact
+              </a>
+              </Link>
             </li>
           </ul>
         </nav>

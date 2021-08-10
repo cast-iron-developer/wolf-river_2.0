@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from 'next/link';
 
 // styles
 const pageStyles = {
@@ -44,7 +45,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <a href="/">Go home</a>.
+        <Link href="/"><a>Go home</a></Link>.
       </p>
     </main>
   )
