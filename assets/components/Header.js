@@ -50,9 +50,8 @@ const Header = ({originPage}) => {
                     <a className="site-logo-link">
                         <Image
                             className="site-logo"
-                            width="200"
-                            height="70"
-                            layout="fixed"
+                            width="190"
+                            height="65"
                             src={logo}
                             alt="Wolf River Psychology"
                         />

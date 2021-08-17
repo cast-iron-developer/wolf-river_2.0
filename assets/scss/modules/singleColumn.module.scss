@@ -3,105 +3,164 @@
 @import "../layout/layout.scss";
 
 .section {
-  display: grid;
-  @include breakpoints(really_big large desktop sm_desktop lg_tablet tablet) {
-    grid-template-columns: 1fr 8fr 1fr;
-  }
-  @include breakpoints(nav mobile) {
-    grid-template-columns: 1fr 15fr 1fr;
-  }
-
-  &.homeIntro {
-    background-image: url(../../images/homepage-intro-bg-large.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-
-    &::after {
-      background: linear-gradient(transparent, rgba(0, 0, 0, 0.25));
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+    display: grid;
+    @include breakpoints(really_big large desktop sm_desktop lg_tablet tablet) {
+        grid-template-columns: 1fr 8fr 1fr;
     }
-  }
-
-  &.aboutIntro,
-  &.professionalIntro,
-  &.servicesIntro {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-
-  &.aboutIntro {
-    background-image: url(../../images/about-intro-bg-large.jpg);
-  }
-  &.professionalIntro {
-    background-image: url(../../images/professional-intro-bg-large.jpg);
-  }
-
-  &.servicesIntro {
-    background-image: url(../../images/services-intro-bg-large.jpg);
-  }
-
-  &.homeAnnouncement {
-    // background-color: $alt-white;
-    background-color: map-get($odie-pallet, color4);
-    color: $white;
-  }
-
-  .Container {
-    grid-column: 2;
-    margin: 0 auto;
-    height: inherit;
-
-    @include breakpoints(really_big large desktop sm_desktop) {
-      max-width: 875px;
-    }
-    @include breakpoints(lg_tablet tablet) {
-      max-width: 750px;
+    @include breakpoints(nav mobile) {
+        grid-template-columns: 1fr 15fr 1fr;
     }
 
-    .Row {
-      display: grid;
-      align-items: center;
-      justify-items: center;
-      height: inherit;
+    &.homeIntro {
+        background-image: url(../../images/homepage-intro-bg-large.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
 
-      @include breakpoints(really_big large desktop sm_desktop) {
-        grid-template-columns: 1fr;
-        margin: 70px auto;
-      }
-      @include breakpoints(lg_tablet tablet nav mobile) {
-        grid-template-columns: 1fr;
-        margin: 50px auto;
-      }
-      .Col {
-        grid-column: 1/3;
-        height: inherit;
+        &::after {
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.25));
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .Container {
+            height: inherit;
+
+            .Row {
+                height: inherit;
+
+                .Col {
+                    height: inherit;
+                }
+            }
+        }
+    }
+
+    &.aboutIntro,
+    &.professionalIntro,
+    &.servicesIntro {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    &.professionalIntro {
+        .Col {
+            display: grid;
+            grid-template-rows: auto;
+            @include breakpoints(really_big large desktop sm_desktop) {
+                grid-template-columns: 2fr 3fr;
+            }
+            @include breakpoints(lg_tablet tablet nav mobile) {
+                grid-template-columns: 1fr;
+                background-color: $white;
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    &.aboutIntro {
+        .Col {
+            display: grid;
+            @include breakpoints(really_big large desktop sm_desktop) {
+                grid-template-columns: 2fr 1fr;
+            }
+
+            @include breakpoints(lg_tablet tablet nav mobile) {
+                grid-template-columns: 1fr;
+                background-color: $white;
+                padding: 1.5rem;
+            }
+        }
+        background-image: url(../../images/about-intro-bg-large.jpg);
+    }
+
+    &.professionalIntro {
+        background-image: url(../../images/professional-intro-bg-large.jpg);
+    }
+
+    &.servicesIntro {
+        background-image: url(../../images/services-intro-bg-large.jpg);
+    }
+
+    &.homeAnnouncement {
+        // background-color: $alt-white;
+        background-color: map-get($odie-pallet, color4);
+        color: $white;
+    }
+
+    &.aboutColumns {
+        .Col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 1.5rem;
+
+            @include breakpoints(lg_tablet tablet nav mobile) {
+                display: flex;
+                flex-flow: column nowrap;
+                background-color: $white;
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    &.costSection {
+        .Col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .Container {
+        grid-column: 2;
+        margin: 0 auto;
 
         @include breakpoints(really_big large desktop sm_desktop) {
-          &__left {
-            grid-column-start: 1;
-          }
-          &__right {
-            grid-column-start: 2;
-          }
+            max-width: 875px;
         }
-        &__left,
-        &__right {
-          @include breakpoints(really_big large desktop sm_desktop) {
-          }
-          @include breakpoints(lg_tablet tablet nav mobile) {
-            grid-column: 1/3;
-          }
+        @include breakpoints(lg_tablet tablet) {
+            max-width: 750px;
         }
-      }
+
+        .Row {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+            @include breakpoints(really_big large desktop sm_desktop) {
+                grid-template-columns: 1fr;
+                margin: 70px auto;
+            }
+            @include breakpoints(lg_tablet tablet nav mobile) {
+                grid-template-columns: 1fr;
+                margin: 50px auto;
+            }
+            .Col {
+                grid-column: 1/3;
+
+                @include breakpoints(really_big large desktop sm_desktop) {
+                    &__left {
+                        grid-column-start: 1;
+                    }
+                    &__right {
+                        grid-column-start: 2;
+                    }
+                }
+                &__left,
+                &__right {
+                    @include breakpoints(really_big large desktop sm_desktop) {
+                    }
+                    @include breakpoints(lg_tablet tablet nav mobile) {
+                        grid-column: 1/3;
+                    }
+                }
+            }
+        }
     }
-  }
 }

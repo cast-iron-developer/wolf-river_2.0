@@ -4,7 +4,7 @@ import classes from '../scss/modules/singleColumn.module.scss';
 
 const Structure = ({sectionId, children}) => {
   return (
-    <section id={sectionId} className={classes[sectionId] + " " + classes.section}>
+    <section id={sectionId} className={(sectionId ? classes[sectionId] : '') + " " + classes.section}>
       <div className={classes.Container}>
         <div className={classes.Row}>
           <div className={classes.Col}>

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import head from 'next/head';
-import Layout from '../components/layout';
-import SingleColumn from '../components/singleColumn';
+import Head from 'next/head';
+import Layout from '../../assets/components/layout';
+import SingleColumn from '../../assets/components/singleColumn';
 
 const Contact = () => {
   return (
@@ -11,8 +11,8 @@ const Contact = () => {
       </Head>
       <Layout>
         <SingleColumn sectionId="contactIntro">
-          <h5 className="h1">Contact Information:</h5>
-          <p><strong>This information is not intended for emergency contact.  If you are experiencing a medical or mental health emergency, please call 911 or go to your local Emergency Department for evaluation.  You can also reach the National Suicide Prevention Lifeline at: <a className="phoneLink" href="tel:18002738255" title="National Suicide Prevention Lifelines">1 (800) 273-8255</a>.</strong></p>
+          <h5 className="h1 margin-vert-0">Contact Information:</h5>
+          <p><strong>This information is not intended for emergency contact.  <strong>If you are experiencing a medical or mental health emergency, please call 911 or go to your local Emergency Department for evaluation.</strong>  You can also reach the National Suicide Prevention Lifeline at: <a className="phoneLink" href="tel:18002738255" title="National Suicide Prevention Lifelines">1 (800) 273-8255</a>.</strong></p>
           <p></p>
         </SingleColumn>
         <SingleColumn sectionId="contactInfo">

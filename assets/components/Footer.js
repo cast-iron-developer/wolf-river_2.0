@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className={classes.odieBlurb}><p>© 2018–{currentYear.getFullYear()} | by <a href="https://www.novadev.cc">Sam O'Donnell</a></p></div>
+          <div className={classes.odieBlurb}><p>© 2018–{currentYear.getFullYear()} | by <a href="https://github.com/mrodie">Sam O'Donnell</a></p></div>
         </SingleColumn>
 
 

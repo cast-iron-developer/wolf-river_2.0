@@ -7,11 +7,6 @@
 .homeTextOuter {
   position: relative;
   height: inherit;
-  animation: load;
-  animation-duration: 3s;
-  animation-delay: .3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
 
   .homeTextInner {
     position: absolute;
@@ -36,7 +31,7 @@
   flex-flow: row;
   grid-column: 2;
   justify-content: space-around;
-  margin: 90px 0;
+  padding: 4rem 2rem;
   gap: 0 2rem;
 
   .innerContainer {
@@ -72,22 +67,4 @@
 
 .drColdwellImg {
   box-shadow: 15px 15px $white;
-}
-
-
-@keyframes load {
-  0% {
-    color: purple;
-    opacity: 0;
-    display: none;
-  }
-
-  50% {
-    color: green;
-  }
-
-  100% {
-    color: orange;
-    opacity: 1;
-  }
 }
