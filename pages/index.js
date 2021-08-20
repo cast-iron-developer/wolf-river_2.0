@@ -1,3 +1,4 @@
+import * as React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +21,7 @@ const Homepage = () => (
     <>
         <Head>
             <title>Wolf River Psychology | Home</title>
+            <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <Layout page="home">
             <SingleColumn sectionId="homeIntro">

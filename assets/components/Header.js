@@ -86,6 +86,11 @@ const Header = ({originPage}) => {
                         </Link>
                     </li>
                     <li className="nav-link">
+                        <Link href="/clients">
+                            Clients
+                        </Link>
+                    </li>
+                    <li className="nav-link">
                         <Link href="/contact">
                             <a onClick={toggleMenuFromNav}>Contact</a>
                         </Link>

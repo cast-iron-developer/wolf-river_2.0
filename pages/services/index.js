@@ -4,6 +4,7 @@ import Layout from "../../assets/components/layout";
 import SingleColumn from "../../assets/components/singleColumn";
 import RightOffset from "../../assets/components/partials/RightOffset";
 import LeftOffset from "../../assets/components/partials/LeftOffset";
+import classes from "../../assets/scss/modules/services.module.scss";
 
 const Services = () => {
     return (
@@ -108,170 +109,41 @@ const Services = () => {
                     <h5 className="h1 margin-top-0 margin-bottom-1">
                         Services Offered:
                     </h5>
-                    <h6 id="sleep-disorders" className="h3 margin-vert-0">
+                    <h6 id="sleep-disorders" className={classes.sleepDisorders + " h3 margin-vert-0"}>
                         Sleep Disorders
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
+                        The primary treatment used to treat anxiety is Cognitive
+                        Behavioral Therapy for Insomnia, or CBT-I. This approach
+                        uses a combination of education, behavior change, coping
+                        skills and sleep prescription to increase sleep
+                        efficiency. It typically requires 5-8 sessions to
+                        complete a course of CBT-I.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <h6 id="ocd" className="h3 margin-vert-0">
+                    <h6 id="ocd" className={classes.ocd + " h3 margin-vert-0"}>
                         OCD
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
+                        The most effective treatment for OCD to date is
+                        Exposures and Response Prevention, or ERP. This
+                        treatment combines in-session learning and support with
+                        out-of-session assignments to target both obsessive
+                        thoughts and compulsive behaviors. More specifics on
+                        this complex treatment can be found at IOCDF.org.
+                        Additional treatments are available for OCD related
+                        disorders such as ARFID and Tourette’s.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <h6 id="anxiety-disorgers" className="h3 margin-vert-0">
+                    <h6 id="anxiety-disorders" className={classes.anxietyDisorders + " h3 margin-vert-0"}>
                         Anxiety Disorders
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum, placeat voluptatem? Illum facilis rem laboriosam
-                        optio atque in, voluptas nostrum repellendus quis
-                        sapiente dolor, minus eligendi! Possimus, alias omnis
-                        sapiente excepturi ex ipsam! Voluptatibus repellat
-                        dignissimos beatae eligendi quo in labore inventore,
-                        quas natus eos saepe! Provident excepturi ipsum magni
-                        vero reprehenderit ea ullam voluptate accusantium
-                        mollitia dolor doloremque soluta dolore eos praesentium,
-                        possimus ab dolorem quos cumque quae tempora incidunt
-                        enim non quis quo! Sunt blanditiis placeat neque a.
+                        The primary treatment utilized for these disorders is
+                        Cognitive Behavioral Therapy. This broad category of
+                        therapies focuses on the ways in which thoughts,
+                        behaviors and emotions interact to create new patterns
+                        of thoughts and coping skills. Treatment length varies
+                        and the specifics of treatment will be determined by the
+                        client’s individual symptoms.
                     </p>
                 </SingleColumn>
 
