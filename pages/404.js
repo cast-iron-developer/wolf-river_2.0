@@ -1,46 +1,22 @@
 import * as React from "react"
+import Layout from '../assets/components/layout';
+import SingleColumn from '../assets/components/singleColumn';
+import Head from 'next/head';
 import Link from 'next/link';
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+const NotFoundPage = () => (
+  <>
+    <Head>
+      <title>Uh Oh! | Wolf River Psychological Services</title>
+    </Head>
+    <Layout page="notFound">
+      <SingleColumn sectionId="notFound">
+        <h2 className="h1">Page not found.</h2>
+        <Link href="/">Go Home.</Link>
+      </SingleColumn>
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        <Link href="/"><a>Go home</a></Link>.
-      </p>
-    </main>
-  )
-}
+    </Layout>
+  </>
+)
 
 export default NotFoundPage

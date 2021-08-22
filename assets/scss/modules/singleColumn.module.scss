@@ -114,12 +114,15 @@
         .Col {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 0 3rem;
         }
     }
 
     .Container {
         grid-column: 2;
+        display: grid;
         margin: 0 auto;
+        grid-template-columns: 1fr 10fr 1fr;
 
         @include breakpoints(really_big large desktop sm_desktop) {
             max-width: 875px;
@@ -129,6 +132,7 @@
         }
 
         .Row {
+            grid-column: 2;
             display: grid;
             align-items: center;
             justify-items: center;
@@ -143,6 +147,7 @@
             }
             .Col {
                 grid-column: 1/3;
+                width: 100%;
 
                 @include breakpoints(really_big large desktop sm_desktop) {
                     &__left {

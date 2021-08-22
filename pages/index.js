@@ -21,7 +21,6 @@ const Homepage = () => (
     <>
         <Head>
             <title>Wolf River Psychology | Home</title>
-            <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <Layout page="home">
             <SingleColumn sectionId="homeIntro">

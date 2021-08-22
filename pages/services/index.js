@@ -27,7 +27,7 @@ const Services = () => {
                     </RightOffset>
                 </SingleColumn>
 
-                <SingleColumn sectionId="firstSession">
+                <SingleColumn>
                     <h5 className="h2">
                         What to Expect at Your First Session:
                     </h5>

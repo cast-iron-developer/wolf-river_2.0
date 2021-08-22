@@ -13,9 +13,10 @@ const Clients = () => (
 
         <Layout page="client">
             <SingleColumn>
-                <h3 className="h1 margin-bottom-0">Client Portal:</h3>
+                <h3 className="h1 margin-bottom-1">Client Portal:</h3>
                 <Link href="https://krystin-coldwell.clientsecure.me/">Schedule Appointment*</Link>
                 <p><small><sup>*</sup>This is for existing clients only.</small></p>
+
             </SingleColumn>
         </Layout>
     </>
