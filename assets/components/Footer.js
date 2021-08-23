@@ -20,9 +20,10 @@ const Footer = () => {
 
           <div className={classes.navigation}>
             <ul className={classes.navList}>
-              <li><Link href="/professional-profile"><a>Professional Profile</a></Link></li>
-              <li><Link href="/about-psychotherapy"><a>About Psychotherapy</a></Link></li>
+              <li><Link href="/professional-profile"><a>Profile</a></Link></li>
+              <li><Link href="/about-psychotherapy"><a>About</a></Link></li>
               <li><Link href="/services"><a>Services</a></Link></li>
+              <li><Link href="/clients"><a>Clients</a></Link></li>
               <li><Link href="/contact"><a>Contact</a></Link></li>
             </ul>
           </div>

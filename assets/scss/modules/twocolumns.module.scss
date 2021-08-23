@@ -34,7 +34,29 @@
 
             .ColRight {
                 grid-column: 3;
+            }
+        }
+    }
 
+    &.contactInfo {
+        .Row {
+            background-color: map-get($odie-pallet, color2);
+            color: $white;
+            padding: 3rem;
+            border-radius: 5px;
+
+            @include breakpoints(really_big large desktop sm_desktop) {
+                grid-template-columns: 5fr 5fr;
+                margin: 70px 0;
+                gap: 0 2rem;
+            }
+
+            .ColLeft {
+                grid-column: 1;
+            }
+
+            .ColRight {
+                grid-column: 2;
             }
         }
     }

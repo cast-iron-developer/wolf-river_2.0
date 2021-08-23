@@ -53,6 +53,7 @@ const AboutPsychotherapy = () => {
                         />
                     </LeftOffset>
                     <RightOffset parent="aboutRight">
+                        <h4 className="h3 margin-bottom-0">CBT</h4>
                         <p>
                             While I primarily work from a Cognitive Behavioral
                             therapeutic approach, I often draw from other

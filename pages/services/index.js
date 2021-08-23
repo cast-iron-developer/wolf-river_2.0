@@ -13,7 +13,7 @@ const Services = () => {
                 <title>Services | Wolf River Psychological Services</title>
             </Head>
             <Layout page="services">
-                <SingleColumn sectionId="servicesIntro" isSplit={false}>
+                <SingleColumn sectionId="servicesIntro">
                     <RightOffset parent="rightServicesIntro">
                         <h5 className="h1 text-white text-shadow-dark margin-bottom-0">
                             Services:
@@ -27,7 +27,7 @@ const Services = () => {
                     </RightOffset>
                 </SingleColumn>
 
-                <SingleColumn isSplit={false}>
+                <SingleColumn>
                     <h5 className="h2">
                         What to Expect at Your First Session:
                     </h5>
@@ -67,7 +67,7 @@ const Services = () => {
                 </SingleColumn>
 
                 <SingleColumn sectionId="costSection" isSplit="true">
-                    <h5 className="h1 margin-vert-0">Cost for Services</h5>
+                    <h5 className="h1">Cost for Services:</h5>
                     <LeftOffset parent="leftCostSection">
                         <h5 className="h2 margin-top-1 margin-bottom-0">
                             Insurance:
@@ -105,7 +105,7 @@ const Services = () => {
                     </RightOffset>
                 </SingleColumn>
 
-                <SingleColumn isSplit={false}>
+                <SingleColumn>
                     <h5 className="h1 margin-top-0 margin-bottom-1">
                         Services Offered:
                     </h5>
@@ -147,7 +147,7 @@ const Services = () => {
                     </p>
                 </SingleColumn>
 
-                <SingleColumn sectionId="servicesBodyTop" isSplit={false}>
+                <SingleColumn sectionId="servicesBodyTop">
                     <h5 className="h2">
                         What to Expect at Your First Session:
                     </h5>

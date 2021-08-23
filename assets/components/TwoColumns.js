@@ -14,7 +14,7 @@ const TwoColumns = (props) => {
             <div className={classes.Container}>
                 <div className={classes.Row}>
                     <div className={classes.ColLeft}>{props.left}</div>
-                    <div className={classes.ColRigh}>{props.right}</div>
+                    <div className={classes.ColRight}>{props.right}</div>
                 </div>
             </div>
         </section>

@@ -3,6 +3,7 @@
 @import "../layout/layout.scss";
 
 .homeRight {
+    
     @include breakpoints(really_big large desktop sm_desktop) {
         grid-column: 3;
     }
@@ -13,10 +14,13 @@
 }
 
 .aboutRight {
+    
     @include breakpoints(really_big large desktop sm_desktop) {
         grid-column: 3;
         display: flex;
         align-items: center;
+        flex-flow: column nowrap;
+        align-items: flex-start;
     }
     @include breakpoints(lg_tablet tablet nav mobile) {
         grid-column: 2;
