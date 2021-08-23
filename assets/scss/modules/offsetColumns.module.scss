@@ -15,6 +15,12 @@
   }
 }
 
+.main .contact {
+  .offset {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+  }
+}
+
 #homeIntro {
   background-image: url(../../images/homepage-intro-bg-large.jpg);
   background-position: center;

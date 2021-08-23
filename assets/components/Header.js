@@ -9,8 +9,6 @@ const Header = ({originPage}) => {
     const [offset, setOffset] = useState(0);
     let body, menu_btn, header;
 
-    console.log(originPage);
-
     useEffect(() => {
         body = document.querySelector("body");
         menu_btn = document.querySelector("#menu-btn");

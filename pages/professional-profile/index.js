@@ -14,7 +14,7 @@ const Profile = () => {
                 </title>
             </Head>
             <Layout page="professionalProfile">
-                <SingleColumn sectionId="professionalIntro">
+                <SingleColumn sectionId="professionalIntro" isSplit={false}>
                     <RightOffset parent="professionalIntroRight">
                         <h5 className="h1 margin-vert-0">
                             Professional Profile:
@@ -37,7 +37,7 @@ const Profile = () => {
                     </RightOffset>
                 </SingleColumn>
 
-                <SingleColumn sectionId="professionalBody">
+                <SingleColumn sectionId="professionalBody" isSplit={false}>
                     <p>
                         In August 2018, I made the move into private practice.
                     </p>

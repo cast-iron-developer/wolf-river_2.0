@@ -24,6 +24,18 @@
     }
 }
 
+.contactRight {
+        @include breakpoints(really_big large desktop sm_desktop) {
+        grid-column: 3;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    @include breakpoints(lg_tablet tablet nav mobile) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
 .professionalIntroRight,
 .rightCostSection {
     @include breakpoints(really_big large desktop sm_desktop) {

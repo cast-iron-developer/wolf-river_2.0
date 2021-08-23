@@ -3,10 +3,6 @@
 @import "../layout/layout.scss";
 
 .section {
-    display: grid;
-    @include breakpoints(really_big large desktop sm_desktop lg_tablet tablet) {
-        grid-template-columns: 1fr 8fr 1fr;
-    }
     @include breakpoints(nav mobile) {
         grid-template-columns: 1fr 15fr 1fr;
     }
@@ -125,7 +121,7 @@
         grid-template-columns: 1fr 10fr 1fr;
 
         @include breakpoints(really_big large desktop sm_desktop) {
-            max-width: 875px;
+            // max-width: 875px;
         }
         @include breakpoints(lg_tablet tablet) {
             max-width: 750px;
@@ -138,17 +134,23 @@
             justify-items: center;
 
             @include breakpoints(really_big large desktop sm_desktop) {
-                grid-template-columns: 1fr;
-                margin: 70px auto;
+                grid-template-columns: 1fr 8fr 1fr;
+                margin: 70px 0;
             }
             @include breakpoints(lg_tablet tablet nav mobile) {
                 grid-template-columns: 1fr;
-                margin: 50px auto;
+                margin: 50px 0;
             }
             .Col {
-                grid-column: 1/3;
+                display: grid;
                 width: 100%;
+                grid-column: 2;
 
+                .ParentSplit {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0 2rem;
+                }
                 @include breakpoints(really_big large desktop sm_desktop) {
                     &__left {
                         grid-column-start: 1;
@@ -166,6 +168,13 @@
                     }
                 }
             }
+        }
+    }
+
+    &.contactInfo {
+        .ParentSplit {
+            grid-template-columns: 1fr 5fr 5fr 1fr;
+            gap: 1rem;
         }
     }
 }

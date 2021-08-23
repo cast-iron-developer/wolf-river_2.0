@@ -49,6 +49,7 @@ const AboutPsychotherapy = () => {
                             width="400"
                             height="393"
                             title="CBT Image"
+                            alt="CBT Image"
                         />
                     </LeftOffset>
                     <RightOffset parent="aboutRight">

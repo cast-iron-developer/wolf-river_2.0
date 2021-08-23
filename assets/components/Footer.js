@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <footer className={classes.footer}>
-        <SingleColumn sectionId="footer">
+        <SingleColumn sectionId="footer" isSplit={false}>
 
           <div className={classes.header}>
             <h6 className="h1">

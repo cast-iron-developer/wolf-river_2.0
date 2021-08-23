@@ -13,7 +13,7 @@ const Services = () => {
                 <title>Services | Wolf River Psychological Services</title>
             </Head>
             <Layout page="services">
-                <SingleColumn sectionId="servicesIntro">
+                <SingleColumn sectionId="servicesIntro" isSplit={false}>
                     <RightOffset parent="rightServicesIntro">
                         <h5 className="h1 text-white text-shadow-dark margin-bottom-0">
                             Services:
@@ -27,7 +27,7 @@ const Services = () => {
                     </RightOffset>
                 </SingleColumn>
 
-                <SingleColumn>
+                <SingleColumn isSplit={false}>
                     <h5 className="h2">
                         What to Expect at Your First Session:
                     </h5>
@@ -66,7 +66,7 @@ const Services = () => {
                     </p>
                 </SingleColumn>
 
-                <SingleColumn sectionId="costSection">
+                <SingleColumn sectionId="costSection" isSplit="true">
                     <h5 className="h1 margin-vert-0">Cost for Services</h5>
                     <LeftOffset parent="leftCostSection">
                         <h5 className="h2 margin-top-1 margin-bottom-0">
@@ -105,7 +105,7 @@ const Services = () => {
                     </RightOffset>
                 </SingleColumn>
 
-                <SingleColumn sectionId="">
+                <SingleColumn isSplit={false}>
                     <h5 className="h1 margin-top-0 margin-bottom-1">
                         Services Offered:
                     </h5>
@@ -147,7 +147,7 @@ const Services = () => {
                     </p>
                 </SingleColumn>
 
-                <SingleColumn sectionId="servicesBodyTop">
+                <SingleColumn sectionId="servicesBodyTop" isSplit={false}>
                     <h5 className="h2">
                         What to Expect at Your First Session:
                     </h5>
@@ -199,11 +199,11 @@ const Services = () => {
                     <h5 className="h2">Follow-up Sessions:</h5>
                     <p>
                         Psychotherapy sessions will be structured around the
-                        client's treatment plan. This will vary based on the
-                        presenting issue, as well as the client's strengths and
+                        client&#39;s treatment plan. This will vary based on the
+                        presenting issue, as well as the client&#39;s strengths and
                         needs. Sometimes, homework will be assigned between
                         sessions. The work done outside of session is equally
-                        important to what is accomplished within the therapist's
+                        important to what is accomplished within the therapist&#39;s
                         office.
                     </p>
                     <p>
@@ -214,7 +214,7 @@ const Services = () => {
                     </p>
                     <h5 className="h2">Additional Assessment:</h5>
                     <p>
-                        Based on the client's presenting issue, additional
+                        Based on the client&#39;s presenting issue, additional
                         assessment using standardized psychometric instruments
                         may be required.
                     </p>

@@ -23,14 +23,14 @@ const Homepage = () => (
             <title>Wolf River Psychology | Home</title>
         </Head>
         <Layout page="home">
-            <SingleColumn sectionId="homeIntro">
+            <SingleColumn sectionId="homeIntro" isSplit={false}>
                 <article className={classes.homeTextOuter}>
                     <div className={classes.homeTextInner}>
                         <p
                             className={`${classes.homeText} margin-none h1 text-uppercase text-center`}
                         >
-                            "Insight for your <em>present</em> to inspire your{" "}
-                            <em>future</em>."
+                            &quot;Insight for your <em>present</em> to inspire your
+                            <em>future</em>.&quot;
                         </p>
                     </div>
                 </article>
@@ -98,11 +98,12 @@ const Homepage = () => (
                         src={drColdwell}
                         layout="responsive"
                         title="Dr. Coldwell"
+                        alt="Dr. Coldwell"
                     />
                 </RightOffset>
             </OffsetColumns>
 
-            <SingleColumn sectionId="homeQuote">
+            <SingleColumn sectionId="homeQuote" isSplit={false}>
                 <Blockquote attribution="Irvin D. Yalom">
                     The ultimate goal of therapy…it’s too hard a question. The
                     words come to me like tranquility, like fulfillment, like

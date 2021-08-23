@@ -28,6 +28,12 @@
   }
 }
 
+.contactLeft {
+    flex-flow: column nowrap;
+    grid-column: 2;
+    display: flex;
+}
+
 .aboutIntroLeft,
 .leftCostSection {
     @include breakpoints(really_big large desktop sm_desktop) {

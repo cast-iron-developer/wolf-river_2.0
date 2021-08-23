@@ -1,0 +1,41 @@
+@import "../misc/misc.scss";
+@import "../mixins/mixins.scss";
+@import "../layout/layout.scss";
+
+.section {
+    @include breakpoints(nav mobile) {
+        grid-template-columns: 1fr 15fr 1fr;
+    }
+    .Container {
+        display: grid;
+        grid-column: 2;
+        grid-template-columns: 1fr 10fr 1fr;
+        gap: 2rem 0;
+
+        .Row {
+            grid-column: 2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+            @include breakpoints(really_big large desktop sm_desktop) {
+                grid-template-columns: 1fr 5fr 5fr 1fr;
+                margin: 70px 0;
+                gap: 0 2rem;
+            }
+            @include breakpoints(lg_tablet tablet nav mobile) {
+                grid-template-columns: 1fr;
+                margin: 50px 0;
+            }
+            .ColLeft {
+                grid-column: 2;
+                align-self: flex-start;
+            }
+
+            .ColRight {
+                grid-column: 3;
+
+            }
+        }
+    }
+}
