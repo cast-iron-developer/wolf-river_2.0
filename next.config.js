@@ -6,11 +6,6 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, "styles")],
     },
-    images: {
-        disableStaticImages: true,
-        loader: "imgix",
-        path: "https://noop/",
-    },
     withImages,
     target: "serverless",
     exportPathMap: async function (

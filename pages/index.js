@@ -95,8 +95,6 @@ const Homepage = () => (
                     <Image
                         className={classes.drColdwellImg}
                         src="/images/dr-coldwell-homepage.jpg"
-                        width="150"
-                        height="200"
                         layout="fill"
                         title="Dr. Coldwell"
                         alt="Dr. Coldwell"
