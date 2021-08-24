@@ -2,7 +2,7 @@ import React from 'react'
 
 import classes from '../../scss/modules/Blockquote.module.scss'
 
-const blockquote = (props) => {
+const Blockquote = (props) => {
   return (
     <article className={classes.BlockquoteContainer}>
       <blockquote className={classes.Blockquote}>
@@ -13,4 +13,4 @@ const blockquote = (props) => {
   )
 }
 
-export default blockquote;
+export default Blockquote;
