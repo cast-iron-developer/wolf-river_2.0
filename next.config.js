@@ -21,7 +21,7 @@ module.exports = {
             "/": { page: "/" },
             "/services": { page: "/services" },
             "/about-psychotherapy": { page: "/about-psychotherapy" },
-            "/client": { page: "/client" },
+            "/clients": { page: "/clients" },
             "/professional-profile": { page: "/professional-profile" },
             "/contact": { page: "/contact" },
         };
