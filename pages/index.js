@@ -98,7 +98,7 @@ const Homepage = () => (
                         width="319"
                         height="400"
                         title="Dr. Coldwell"
-                        alt="Dr. Coldwell"
+                        alt="Dr. Coldwell Image"
                     />
                 </RightOffset>
             </OffsetColumns>

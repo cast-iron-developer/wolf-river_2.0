@@ -138,6 +138,10 @@ main {
   text-transform: capitalize;
 }
 
+.hidden {
+  display: none;
+}
+
 .link {
   text-decoration: none;
   color: map-get($odiePallet, "color5");

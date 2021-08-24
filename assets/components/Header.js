@@ -65,6 +65,7 @@ const Header = ({originPage}) => {
                 onClick={toggleHeader}
             />
             <label htmlFor="menu-btn" className="menu-icon">
+                <p className="hidden">Menu Button</p>
                 <span className="menu-icon__line"></span>
             </label>
             <nav className="nav-links">
