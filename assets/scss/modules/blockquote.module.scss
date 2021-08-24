@@ -2,7 +2,12 @@
 @use "../misc/colors.scss" as *;
 
 .BlockquoteContainer {
-  padding: 3rem;
+  @include breakpoints(really_big large sm_desktop desktop) {
+    padding: 3rem;
+  }
+  @include breakpoints(lg_tablet tablet nav mobile) {
+    padding: 3rem 0;
+  }
 
   .Blockquote {
     background: #f9f9f9;

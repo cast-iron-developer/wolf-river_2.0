@@ -48,14 +48,23 @@
                 grid-template-columns: 5fr 5fr;
                 margin: 70px 0;
                 gap: 0 2rem;
-            }
 
-            .ColLeft {
-                grid-column: 1;
+                .ColLeft {
+                    grid-column: 1;
+                }
+    
+                .ColRight {
+                    grid-column: 2;
+                }
             }
+            @include breakpoints(lg_tablet tablet nav mobile){
+                grid-template-columns: 1fr;
+                gap: 2rem 0;
 
-            .ColRight {
-                grid-column: 2;
+                .ColLeft,
+                .ColRight {
+                    grid-column: 1;
+                }
             }
         }
     }

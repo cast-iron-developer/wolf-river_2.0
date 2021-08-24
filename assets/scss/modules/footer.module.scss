@@ -17,7 +17,7 @@
       display: flex;
       flex-flow: row wrap;
       padding-left: 0;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 2rem 0;
 
       li {
@@ -30,6 +30,10 @@
         a {
           text-decoration: none;
           color: $white;
+        }
+
+        @include breakpoints(lg_tablet tablet nav mobile) {
+          padding: 0 .5rem;
         }
       }
     }

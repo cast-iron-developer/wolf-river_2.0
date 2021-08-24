@@ -56,13 +56,6 @@
         @include breakpoints(mobile) {
             width: 190px;
         }
-        // .site-logo-link {
-        //     display: block;
-        //     div {
-        //         .site-logo {
-        //         }
-        //     }
-        // }
     }
 
     a {
@@ -181,6 +174,10 @@
                 background: #fff;
             }
         }
+
+        .logo {
+            margin-top: 3px;
+        }
     }
 }
 
@@ -233,12 +230,12 @@
             clip-path: circle(200px at top right);
             margin-top: 0;
             @include breakpoints(nav mobile) {
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
             @include breakpoints(
                 really_big large desktop sm_desktop lg_tablet tablet
             ) {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
 
             .nav-link {

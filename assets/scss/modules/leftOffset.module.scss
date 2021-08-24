@@ -21,6 +21,7 @@
   align-items: center;
   grid-column: 2;
   display: flex;
+  position: relative;
 
   @include breakpoints(lg_tablet tablet nav mobile) {
       grid-row: 2;

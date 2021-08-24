@@ -42,7 +42,11 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        @include breakpoints(really_big large sm_desktop desktop) {
+            height: 100vh;
+        }
+        @include breakpoints(lg_tablet tablet mobile nav) {
+        }
     }
 
     &.professionalIntro {
@@ -67,7 +71,7 @@
                 grid-template-columns: 2fr 1fr;
             }
 
-            @include breakpoints(large desktop sm_desktop){
+            @include breakpoints(large desktop sm_desktop) {
                 grid-template-columns: 2fr 2fr;
             }
 
@@ -75,6 +79,7 @@
                 grid-template-columns: 1fr;
                 background-color: $white;
                 padding: 1.5rem;
+                border-radius: 5px;
             }
         }
         background-image: url(../../images/about-intro-bg-large.jpg);
@@ -94,16 +99,17 @@
     }
 
     &.homeAnnouncement {
-        // background-color: $alt-white;
         background-color: map-get($odiePallet, color4);
         color: $white;
     }
 
     &.aboutColumns {
         .Col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0 3rem;
+            @include breakpoints(really_big large sm_desktop desktop) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 3rem;
+            }
 
             @include breakpoints(lg_tablet tablet nav mobile) {
                 display: flex;
@@ -128,9 +134,6 @@
         margin: 0 auto;
         grid-template-columns: 1fr 10fr 1fr;
 
-        @include breakpoints(really_big large desktop sm_desktop) {
-            // max-width: 875px;
-        }
         @include breakpoints(lg_tablet tablet) {
             max-width: 750px;
         }
@@ -152,7 +155,6 @@
             .Col {
                 display: grid;
                 width: 100%;
-                grid-column: 2;
 
                 .ParentSplit {
                     display: grid;
@@ -160,6 +162,8 @@
                     gap: 2rem 0;
                 }
                 @include breakpoints(really_big large desktop sm_desktop) {
+                    grid-column: 2;
+
                     &__left {
                         grid-column-start: 1;
                     }
@@ -167,10 +171,11 @@
                         grid-column-start: 2;
                     }
                 }
+                @include breakpoints(lg_tablet tablet nav mobile){
+                    grid-column: 1;
+                }
                 &__left,
                 &__right {
-                    @include breakpoints(really_big large desktop sm_desktop) {
-                    }
                     @include breakpoints(lg_tablet tablet nav mobile) {
                         grid-column: 1/3;
                     }

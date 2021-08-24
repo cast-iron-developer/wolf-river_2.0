@@ -2,35 +2,85 @@
 @use "../misc/colors.scss" as *;
 
 .homeTextOuter {
-    position: relative;
-    height: inherit;
+    @include breakpoints(large really_big desktop sm_desktop) {
+        position: relative;
+        height: inherit;
+        .homeTextInner {
+            position: absolute;
+            width: max-content;
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: map-get($odiePallet, color1);
+            color: $white;
+            padding: 2rem;
+            border-radius: 15px 0 15px 0;
+            box-shadow: inset 0px 0px 0px 3px rgba(238, 238, 238, 0.75);
 
-    .homeTextInner {
-        position: absolute;
-        width: max-content;
-        top: 58%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: map-get($odiePallet, color1);
-        color: $white;
-        padding: 2rem;
-        border-radius: 15px 0 15px 0;
-        box-shadow: inset 0px 0px 0px 3px rgba(238, 238, 238, 0.75);
+            .homeText {
+                max-width: 650px;
+            }
+        }
+    }
+    @include breakpoints(lg_tablet tablet mobile nav) {
+        display: flex;
+        align-items: center;
+        .homeTextInner {
+            background-color: map-get($odiePallet, color1);
+            color: $white;
+            padding: 1rem;
+            border-radius: 15px 0 15px 0;
+            box-shadow: inset 0px 0px 0px 3px rgba(238, 238, 238, 0.75);
 
-        .homeText {
-            max-width: 650px;
+            .homeText {
+                font-size: 90%;
+            }
         }
     }
 }
 .flexContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    flex-flow: row;
-    grid-column: 2;
     justify-content: space-around;
     padding: 4rem 2rem;
-    gap: 0 2rem;
+    @include breakpoints(really_big large sm_desktop desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 2rem;
+    }
+    @include breakpoints(lg_tablet tablet mobile nav) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 
+    .innerContainer {
+        .iconLink {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+            padding: 1rem 0;
+
+            &:hover {
+                background-color: $white;
+
+                .iconCaption,
+                .largeIcon {
+                    color: map-get($odiePallet, color5);
+                }
+            }
+            .largeIcon {
+                font-size: 8rem;
+                color: $white;
+            }
+            .iconCaption {
+                color: $white;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
     .innerContainer {
         .iconLink {
             text-decoration: none;

@@ -65,7 +65,7 @@ const RightContact = () => (
                 passHref={true}
             >
                 <a
-                    className="text-white"
+                    className="text-white text-no-underline"
                     target="_blank"
                     without="true"
                     rel="noreferrer"
