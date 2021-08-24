@@ -32,7 +32,7 @@ const Contact = () => {
                                     className="phoneLink"
                                     title="National Suicide Prevention Lifelines"
                                 >
-                                    1 (800) 273-8255
+                                     1 (800) 273-8255
                                 </a>
                             </Link>
                             .
@@ -84,7 +84,7 @@ const RightContact = () => (
             </Link>
         </p>
         <p>
-            Fax: <strong>(901) 255-1158</strong>
+            Fax: <strong>(901) 249-5637</strong>
         </p>
     </>
 );
