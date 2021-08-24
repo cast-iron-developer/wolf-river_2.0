@@ -9,5 +9,6 @@ module.exports = {
   images: {
     disableStaticImages: true
   },
-  withImages
+  withImages,
+  target: "serverless"
 }
