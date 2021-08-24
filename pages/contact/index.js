@@ -60,7 +60,7 @@ const LeftContact = () => (
 const RightContact = () => (
     <>
         <p className="margin-top-0">
-            <Link href="https://www.google.com/maps/dir//284+German+Oak+Dr+%23100,+Cordova,+TN+38018/@35.1231417,-89.7991513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x887f9b8ba5d99feb:0x56fa7567c22187db!2m2!1d-89.7969626!2d35.1231417">
+            <Link href="//www.google.com/maps/dir/284+German+Oak+Dr+%23100,+Cordova,+TN+38018/@35.1231417,-89.7991513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x887f9b8ba5d99feb:0x56fa7567c22187db!2m2!1d-89.7969626!2d35.1231417">
                 <a
                     className="link text-white"
                     target="_blank"

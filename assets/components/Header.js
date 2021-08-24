@@ -19,9 +19,6 @@ const Header = ({originPage}) => {
 
         checkScrollOffset(offset);
 
-        // return function cleanup () {
-        //     // setOffset(0);
-        // }
     });
 
     const checkScrollOffset = (num) => {
