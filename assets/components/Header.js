@@ -51,6 +51,8 @@ const Header = ({originPage}) => {
                             height="65"
                             src="/images/logo.png"
                             alt="Wolf River Psychology"
+                            rel="preload"
+                            priority={true}
                         />
                     </a>
                 </Link>
