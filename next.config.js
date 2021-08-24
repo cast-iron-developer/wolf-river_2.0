@@ -10,5 +10,18 @@ module.exports = {
     disableStaticImages: true
   },
   withImages,
-  target: "serverless"
+  target: "serverless",
+  exportPathMap: async function(
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': {page: '/'},
+      '/services': {page: '/services'},
+      '/about-psychotherapy': { page: '/about-psychotherapy'},
+      '/client': { page: '/client' },
+      '/professional-profile': { page: '/professional-profile'},
+      '/contact': { page: '/contact' },
+    }
+  }
 }
