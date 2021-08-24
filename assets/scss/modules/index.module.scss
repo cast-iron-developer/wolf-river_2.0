@@ -1,8 +1,5 @@
-@import "../misc/misc.scss";
-@import "../mixins/mixins.scss";
-@import "../layout/layout.scss";
-
-// https://gravitydept.com/blog/keyframe-animations-in-css-modules
+@use "../mixins/breakpoints.scss" as *;
+@use "../misc/colors.scss" as *;
 
 .homeTextOuter {
     position: relative;
@@ -14,7 +11,7 @@
         top: 58%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: map-get($odie-pallet, color1);
+        background-color: map-get($odiePallet, color1);
         color: $white;
         padding: 2rem;
         border-radius: 15px 0 15px 0;
@@ -49,7 +46,7 @@
 
                 .iconCaption,
                 .largeIcon {
-                    color: map-get($odie-pallet, color5);
+                    color: map-get($odiePallet, color5);
                 }
             }
             .largeIcon {
@@ -68,5 +65,5 @@
 .drColdwellImg {
     border-radius: 5px;
     background-color: #eee;
-    border: 2px solid map-get($odie-pallet, color5) !important;
+    border: 2px solid map-get($odiePallet, color5) !important;
 }

@@ -1,9 +1,8 @@
-@import "../misc/misc.scss";
-@import "../mixins/mixins.scss";
-@import "../layout/layout.scss";
+@use "../mixins/breakpoints.scss" as *;
+@use "../misc/colors.scss" as *;
 
 .homeRight {
-    
+    position: relative;
     @include breakpoints(really_big large desktop sm_desktop) {
         grid-column: 3;
     }

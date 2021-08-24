@@ -1,3 +1,6 @@
+@use "../mixins/breakpoints.scss" as *;
+@use "../misc/colors.scss" as *;
+
 %h1 {
   font-size: 2.25rem;
   font-family: "Montserrat Bold", Georgia;
@@ -99,6 +102,10 @@ figcaption {
   text-decoration: underline;
 }
 
+.text-no-underline {
+  text-decoration: none;
+}
+
 .link {
   text-decoration: none;
 
@@ -133,21 +140,21 @@ main {
 
 .link {
   text-decoration: none;
-  color: get-map($odie-pallet, color5);
+  color: map-get($odiePallet, "color5");
 
   &:hover,
   &:focus,
   &:active {
-    color: lighten(map-get($odie-pallet, color5), 15%);
+    color: lighten(map-get($odiePallet, "color5"), 15%);
   }
 }
 .phoneLink {
   text-decoration: none;
-  color: get-map($odie-pallet, color5);
+  color: map-get($odiePallet, "color5");
 
   &:hover,
   &:focus,
   &:active {
-    color: lighten(map-get($odie-pallet, color5), 15%);
+    color: lighten(map-get($odiePallet, "color5"), 15%);
   }
 }

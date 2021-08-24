@@ -1,6 +1,5 @@
-@import "../misc/misc.scss";
-@import "../mixins/mixins.scss";
-@import "../layout/layout.scss";
+@use '../misc/colors.scss' as *;
+@use "../mixins/breakpoints.scss" as *;
 
 .section {
     @include breakpoints(nav mobile) {
@@ -40,7 +39,7 @@
 
     &.contactInfo {
         .Row {
-            background-color: map-get($odie-pallet, color2);
+            background-color: map-get($odiePallet, color2);
             color: $white;
             padding: 3rem;
             border-radius: 5px;

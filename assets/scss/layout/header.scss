@@ -1,3 +1,6 @@
+@use "../misc/colors.scss" as *;
+@use "../mixins/breakpoints.scss" as *;
+
 .main-header {
     position: fixed;
     display: flex;
@@ -8,7 +11,7 @@
     color: #fff;
     z-index: 1;
     transition: 0.4s ease-out;
-    background: map-get($odie-pallet, color1);
+    background: map-get($odiePallet, color1);
     opacity: 0.98;
     z-index: 10;
 
@@ -21,7 +24,7 @@
                 li {
                     a:hover {
                         background-color: rgba(
-                            map-get($odie-pallet, color2),
+                            map-get($odiePallet, color2),
                             0.6
                         );
                     }
@@ -102,7 +105,7 @@
             }
 
             a:hover {
-                background: map-get($odie-pallet, color2);
+                background: map-get($odiePallet, color2);
             }
         }
     }
@@ -163,12 +166,12 @@
 
     &.scrolled {
         height: 70px;
-        background: map-get($odie-pallet, color1);
+        background: map-get($odiePallet, color1);
         opacity: 0.98;
         color: #fff;
 
         &#home-page {
-            background-color: map-get($odie-pallet, color1);
+            background-color: map-get($odiePallet, color1);
         }
 
         .menu-icon {
@@ -225,7 +228,7 @@
             width: 100vw;
             height: 100vh;
             color: #fff;
-            background: map-get($odie-pallet, color1);
+            background: map-get($odiePallet, color1);
             transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
             clip-path: circle(200px at top right);
             margin-top: 0;

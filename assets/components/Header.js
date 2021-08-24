@@ -1,7 +1,6 @@
 import { header } from "../js/header";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../images/logo.png";
 import React, { useEffect, useState } from "react";
 
 const Header = ({originPage}) => {
@@ -19,6 +18,7 @@ const Header = ({originPage}) => {
         };
 
         checkScrollOffset(offset);
+
     });
 
     const checkScrollOffset = (num) => {
@@ -50,7 +50,7 @@ const Header = ({originPage}) => {
                             className="site-logo"
                             width="190"
                             height="65"
-                            src={logo}
+                            src="/images/logo.png"
                             alt="Wolf River Psychology"
                         />
                     </a>

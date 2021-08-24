@@ -39,10 +39,10 @@ const Contact = () => {
                         </strong>
                     </p>
                     <TwoColumns
-                    sectionId="contactInfo"
-                    left={<LeftContact />}
-                    right={<RightContact />}
-                ></TwoColumns>
+                        sectionId="contactInfo"
+                        left={<LeftContact />}
+                        right={<RightContact />}
+                    ></TwoColumns>
                 </SingleColumn>
             </Layout>
         </>
@@ -59,12 +59,15 @@ const LeftContact = () => (
 
 const RightContact = () => (
     <>
-        <p className="margin-top-0">
-            <Link href="https://www.google.com/maps/dir//284+German+Oak+Dr+%23100,+Cordova,+TN+38018/@35.1231417,-89.7991513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x887f9b8ba5d99feb:0x56fa7567c22187db!2m2!1d-89.7969626!2d35.1231417">
+        <p className="margin-top-0 text-no-underline text-white">
+            <Link
+                href="www.google.com/maps/dir/284+German+Oak+Dr+%23100,+Cordova,+TN+38018/@35.1231417,-89.7991513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x887f9b8ba5d99feb:0x56fa7567c22187db!2m2!1d-89.7969626!2d35.1231417"
+                passHref={true}
+            >
                 <a
-                    className="link text-white"
+                    className="text-white"
                     target="_blank"
-                    without
+                    without="true"
                     rel="noreferrer"
                     title="Wolf River Psychological Services Location"
                 >
@@ -77,7 +80,7 @@ const RightContact = () => (
         <p>
             Phone:
             <Link href="tel:+9013007320">
-                <a className="phoneLink text-white"> (901) 300-7320</a>
+                <a className="text-white text-no-underline"> (901) 300-7320</a>
             </Link>
         </p>
         <p>

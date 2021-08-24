@@ -15,7 +15,6 @@ import NightsStayIcon from "@material-ui/icons/NightsStay";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 
 import classes from "../assets/scss/modules/index.module.scss";
-import drColdwell from "../assets/images/dr-coldwell-homepage.jpg";
 
 const Homepage = () => (
     <>
@@ -95,8 +94,8 @@ const Homepage = () => (
                 <RightOffset parent="homeRight">
                     <Image
                         className={classes.drColdwellImg}
-                        src={drColdwell}
-                        layout="responsive"
+                        src="/images/dr-coldwell-homepage.jpg"
+                        layout="fill"
                         title="Dr. Coldwell"
                         alt="Dr. Coldwell"
                     />

@@ -1,8 +1,10 @@
+@use "../misc/colors.scss" as *;
+
 .toggle {
   &__content {
-    border-left: 5px solid map-get($odie-pallet, color5);
-    border-right: 5px solid map-get($odie-pallet, color5);
-    border-bottom: 5px solid map-get($odie-pallet, color5);
+    border-left: 5px solid map-get($odiePallet, color5);
+    border-right: 5px solid map-get($odiePallet, color5);
+    border-bottom: 5px solid map-get($odiePallet, color5);
   }
   &__nav {
     padding: 0;
@@ -22,9 +24,9 @@
     flex-grow: 1;
     text-align: center;
     color: $alt-white;
-    background-color: map-get($odie-pallet, color5);
-    border-top: 5px solid map-get($odie-pallet, color5);
-    border-bottom: 5px solid map-get($odie-pallet, color5);
+    background-color: map-get($odiePallet, color5);
+    border-top: 5px solid map-get($odiePallet, color5);
+    border-bottom: 5px solid map-get($odiePallet, color5);
 
     &.active,
     &:hover,
@@ -38,7 +40,7 @@
     &:active,
     &:focus {
       background-color: $alt-white;
-      color: map-get($odie-pallet, color5);
+      color: map-get($odiePallet, color5);
     }
   }
 

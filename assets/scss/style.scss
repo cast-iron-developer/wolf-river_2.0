@@ -1,13 +1,13 @@
-@import './normalize.scss';
+@use './normalize.scss' as *;
 
-@import './misc/misc.scss';
-@import './mixins/mixins.scss';
-@import './layout/layout.scss';
-@import './layout/font.scss';
+@use './misc/misc.scss' as *;
+@use './mixins/mixins.scss' as *;
+@use './layout/layout.scss' as *;
+@use './layout/font.scss' as *;
 
-@import './modules/toggle.scss';
-@import './modules/accordion.scss';
-@import './parallax.scss';
+@use './modules/toggle.scss' as *;
+@use './modules/accordion.scss' as *;
+@use './parallax.scss' as *;
 
 html {
   box-sizing: border-box;
