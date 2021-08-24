@@ -4,7 +4,6 @@ import Image from "next/image";
 import Layout from "../../assets/components/layout";
 import SingleColumn from "../../assets/components/singleColumn";
 import Blockquote from "../../assets/components/partials/Blockquote";
-import cbt from "../../assets/images/cbt-new.png";
 import RightOffset from "../../assets/components/partials/RightOffset";
 import LeftOffset from "../../assets/components/partials/LeftOffset";
 
@@ -44,7 +43,7 @@ const AboutPsychotherapy = () => {
                 <SingleColumn sectionId="aboutColumns">
                     <LeftOffset parent="aboutLeft">
                         <Image
-                            src={cbt}
+                            src="/images/cbt.jpg"
                             layout="fixed"
                             width="400"
                             height="393"

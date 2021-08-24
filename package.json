@@ -1,37 +1,37 @@
 {
-    "name": "wolf-river-psychological-services",
-    "version": "1.0.0",
-    "private": false,
-    "description": "Wolf River Psychological Services",
-    "author": "Sam",
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "@material-ui/core": "^4.12.3",
-        "@material-ui/icons": "^4.11.2",
-        "next": "^11.0.1",
-        "node-sass": "^6.0.1",
-        "react": "17.0.2",
-        "react-dom": "17.0.2"
-    },
-    "devDependencies": {
-        "eslint": "7.32.0",
-        "eslint-config-next": "11.0.1",
-        "node-sass": "^4.14.1",
-        "sass-loader": "^11.1.1"
-    },
-    "main": "next.config.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/MrOdie/wolf-river_2.0.git"
-    },
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/MrOdie/wolf-river_2.0/issues"
-    },
-    "homepage": "https://github.com/MrOdie/wolf-river_2.0#readme"
+  "name": "wolf-river-psychological-services",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Wolf River Psychological Services",
+  "author": "Sam O'Donnell",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "next": "^11.1.1-canary.13",
+    "next-images": "^1.8.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.38.1"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "sass-loader": "^11.1.01"
+  },
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrOdie/wolf-river_2.0.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrOdie/wolf-river_2.0/issues"
+  },
+  "homepage": "https://github.com/MrOdie/wolf-river_2.0#readme"
 }

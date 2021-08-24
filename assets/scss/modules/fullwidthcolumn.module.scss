@@ -1,8 +1,7 @@
-@import "../misc/misc.scss";
-@import "../mixins/mixins.scss";
-@import "../layout/layout.scss";
+@use "../mixins/breakpoints.scss" as *;
+@use "../misc/colors.scss" as *;
 
 #sectionId {
   grid-template-columns: 1fr 10fr 1fr;
-  background-color: map-get($odie-pallet, color5);
+  background-color: map-get($odiePallet, color5);
 }

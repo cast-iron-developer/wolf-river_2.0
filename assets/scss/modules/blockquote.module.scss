@@ -1,13 +1,12 @@
-@import "../misc/misc.scss";
-@import "../mixins/mixins.scss";
-@import "../layout/layout.scss";
+@use "../mixins/breakpoints.scss" as *;
+@use "../misc/colors.scss" as *;
 
 .BlockquoteContainer {
   padding: 3rem;
 
   .Blockquote {
     background: #f9f9f9;
-    border-left: 10px solid map-get($odie-pallet, color1);
+    border-left: 10px solid map-get($odiePallet, color1);
     margin: 0;
     padding: 0.5rem 1rem;
     quotes: "\201C""\201D""\2018""\2019";
@@ -15,7 +14,7 @@
     box-shadow: 3px 3px 3px rgba(0,0,0, .65);
   }
   .Blockquote:before {
-    color: map-get($odie-pallet, color1);
+    color: map-get($odiePallet, color1);
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;

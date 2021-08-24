@@ -1,9 +1,11 @@
-$odie-pallet: (
-  color1: #58652a,
-  color2: #14080E,
-  color3: #5F5B6B,
-  color4: #EDF7D2,
-  color5: #52414C
+@use "sass:map";
+
+$odiePallet: (
+  "color1": #58652a,
+  "color2": #14080E,
+  "color3": #5F5B6B,
+  "color4": #EDF7D2,
+  "color5": #52414C
 );
 
 $white-hover: #cfcfcf;

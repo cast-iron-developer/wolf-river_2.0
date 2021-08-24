@@ -1,5 +1,7 @@
+@use "../misc/colors.scss" as *;
+
 .accordion {
-	background-color: map-get($odie-pallet, color3);
+	background-color: map-get($odiePallet, color3);
 	color: $white;
 	font-weight: 700;
 	cursor: pointer;
@@ -16,13 +18,13 @@
 .accordion:hover,
 .accordion:focus,
 .accordion:active {
-	background-color: map-get($odie-pallet, color1);
+	background-color: map-get($odiePallet, color1);
 }
 .panel {
 	padding: 0 1.5rem;
 	background-color: $alt-white;
-	border-left: 2px solid map-get($odie-pallet, color1);
-	border-right: 2px solid map-get($odie-pallet, color1);
+	border-left: 2px solid map-get($odiePallet, color1);
+	border-right: 2px solid map-get($odiePallet, color1);
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;

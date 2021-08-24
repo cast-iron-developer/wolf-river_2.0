@@ -64,8 +64,9 @@ const RightContact = () => (
                 <a
                     className="link text-white"
                     target="_blank"
-                    without
+                    without="true"
                     rel="noreferrer"
+                    passHref={true}
                     title="Wolf River Psychological Services Location"
                 >
                     284 German Oak Drive <br />
