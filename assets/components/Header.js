@@ -4,7 +4,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Header = ({originPage}) => {
-    // https://stackoverflow.com/questions/29725828/update-style-of-a-component-onscroll-in-react-js
     const [offset, setOffset] = useState(0);
     let body, menu_btn, header;
 
