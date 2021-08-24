@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="description" content="Wolf River Psychological Services provides Psychological Services in Memphis to adult clients and teenage clients on a case by case basis." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
     </Head>;
 
     return <Component {...pageProps} />;
