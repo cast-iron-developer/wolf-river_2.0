@@ -16,30 +16,28 @@ const Contact = () => {
                 <SingleColumn sectionId="contactIntro">
                     <div className={classes.contactBox}>
                         <h1 className="margin-0">Contact</h1>
-                        <p>
+                        <p className="margin-bottom-0">
+                            This information is not intended for emergency
+                            contact. 
                             <strong>
-                                This information is not intended for emergency
-                                contact.
-                                <strong>
-                                    If you are experiencing a medical or mental
-                                    health emergency, please call 911 or go to your
-                                    local Emergency Department for evaluation.
-                                </strong>
-                                You can also reach the National Suicide Prevention
-                                Lifeline at:
-                                <Link href="tel:18002738255">
-                                    <a
-                                        className="phoneLink"
-                                        title="National Suicide Prevention Lifelines"
-                                    >
-                                        1 (800) 273-8255
-                                    </a>
-                                </Link>
-                                .
+                                If you are experiencing a medical or mental
+                                health emergency, please call 911 or go to your
+                                local Emergency Department for evaluation.
                             </strong>
+                            You can also reach the National Suicide Prevention
+                            Lifeline at:
+                            <Link href="tel:18002738255">
+                                <a
+                                    className="phoneLink"
+                                    title="National Suicide Prevention Lifelines"
+                                >
+                                    1 (800) 273-8255
+                                </a>
+                            </Link>
+                            .
                         </p>
-                    
-                    </div></SingleColumn>
+                    </div>
+                </SingleColumn>
                 <SingleColumn>
                     <h5 className="h1 margin-vert-0">Contact Information:</h5>
                     <TwoColumns
@@ -63,7 +61,6 @@ const LeftContact = () => (
 
 const RightContact = () => (
     <>
-
         <p className="margin-top-0 text-no-underline text-white">
             <Link
                 href="www.google.com/maps/dir/284+German+Oak+Dr+%23100,+Cordova,+TN+38018/@35.1231417,-89.7991513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x887f9b8ba5d99feb:0x56fa7567c22187db!2m2!1d-89.7969626!2d35.1231417"

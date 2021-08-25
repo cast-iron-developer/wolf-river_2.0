@@ -41,6 +41,5 @@
     }
     @include breakpoints(lg_tablet tablet nav mobile) {
         grid-column: 1;
-        grid-row: 1;
     }
 }

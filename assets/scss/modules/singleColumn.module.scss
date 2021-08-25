@@ -133,11 +133,11 @@
         }
 
         &.clientsIntro {
-            background-image: url(../../images/clients-intro-bg-small.jpg);
+            background: url(../../images/clients-intro-bg-small.jpg) center/cover no-repeat;
         }
 
         &.contactIntro {
-            background-image: url(../../images/contact-intro-bg-small.jpg);
+            background: url(../../images/contact-intro-bg-small.jpg) center/cover no-repeat;
         }
     }
 
@@ -171,8 +171,17 @@
     &.costSection {
         .Col {
             display: grid;
-            grid-template-columns: 1fr 1fr;
             gap: 0 3rem;
+
+            @include breakpoints(really_big large sm_desktop desktop){
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            @include breakpoints(lg_tablet tablet nav mobile){
+                grid-template-columns: 1fr;
+
+            }
         }
     }
 
