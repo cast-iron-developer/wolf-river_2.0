@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import Layout from "../../assets/components/layout";
 import SingleColumn from "../../assets/components/singleColumn";
+import LeftOffset from "../../assets/components/partials/LeftOffset";
 
 const Clients = () => (
     <>
@@ -12,14 +13,27 @@ const Clients = () => (
         </Head>
 
         <Layout page="client">
-            <SingleColumn isSplit={false}>
+            <SingleColumn sectionId="clientsIntro">
+                <LeftOffset parent="clientLeft">
+                    <h1 className="text-white text-shadow-dark">Clients:</h1>
+                </LeftOffset>
+            </SingleColumn>
+            <SingleColumn>
                 <h3 className="h1 margin-bottom-1">Client Portal:</h3>
-                <Link href="https://krystin-coldwell.clientsecure.me/" passHref={true}>Schedule Appointment*</Link>
-                <p><small><sup>*</sup>This is for existing clients only.</small></p>
-
+                <Link
+                    href="https://krystin-coldwell.clientsecure.me/"
+                    passHref={true}
+                >
+                    Schedule Appointment*
+                </Link>
+                <p>
+                    <small>
+                        <sup>*</sup>This is for existing clients only.
+                    </small>
+                </p>
             </SingleColumn>
         </Layout>
     </>
-)
+);
 
 export default Clients;

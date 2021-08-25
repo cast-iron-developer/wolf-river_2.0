@@ -7,11 +7,19 @@
     }
 
     &.homeIntro {
-        background-image: url(../../images/homepage-intro-bg-large.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
+
+        @include breakpoints(
+            really_big large sm_desktop desktop lg_tablet tablet
+        ) {
+            background-image: url(../../images/homepage-intro-bg-large.jpg);
+        }
+        @include breakpoints(mobile nav) {
+            background-image: url(../../images/homepage-intro-bg-small.jpg);
+        }
 
         &::after {
             background: linear-gradient(transparent, rgba(0, 0, 0, 0.25));
@@ -82,15 +90,55 @@
                 border-radius: 5px;
             }
         }
-        background-image: url(../../images/about-intro-bg-large.jpg);
+        @include breakpoints(
+            really_big large sm_desktop desktop lg_tablet tablet
+        ) {
+            background-image: url(../../images/about-intro-bg-large.jpg);
+        }
+        @include breakpoints(mobile nav) {
+            background-image: url(../../images/about-intro-bg-small.jpg);
+        }
     }
 
-    &.professionalIntro {
-        background-image: url(../../images/professional-intro-bg-large.jpg);
-    }
+    @include breakpoints(really_big large sm_desktop desktop lg_tablet tablet) {
+        &.professionalIntro {
+            background-image: url(../../images/professional-intro-bg-large.jpg);
+        }
 
-    &.servicesIntro {
-        background-image: url(../../images/services-intro-bg-large.jpg);
+        &.servicesIntro {
+            background-image: url(../../images/services-intro-bg-large.jpg);
+        }
+
+        &.clientsIntro {
+            background: url(../../images/clients-intro-bg-large.jpg) center/cover no-repeat;
+        }
+
+        &.contactIntro {
+            background: url(../../images/contact-intro-bg-large.jpg) center/cover no-repeat;
+        }
+
+        &.clientsIntro,
+        &.contactIntro {
+            display: block;
+            min-height: 460px;
+        }
+    }
+    @include breakpoints(mobile nav) {
+        &.professionalIntro {
+            background-image: url(../../images/professional-intro-bg-small.jpg);
+        }
+
+        &.servicesIntro {
+            background-image: url(../../images/services-intro-bg-small.jpg);
+        }
+
+        &.clientsIntro {
+            background-image: url(../../images/clients-intro-bg-small.jpg);
+        }
+
+        &.contactIntro {
+            background-image: url(../../images/contact-intro-bg-small.jpg);
+        }
     }
 
     &.homeQuote,
@@ -171,7 +219,7 @@
                         grid-column-start: 2;
                     }
                 }
-                @include breakpoints(lg_tablet tablet nav mobile){
+                @include breakpoints(lg_tablet tablet nav mobile) {
                     grid-column: 1;
                 }
                 &__left,
