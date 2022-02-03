@@ -93,17 +93,15 @@ const Services = () => {
                             Fees:
                         </h5>
                         <p>
-                            Intake Session: <strong>$165.00<sup>*</sup></strong> 
+                            Intake Session: <strong>$175.00<sup>*</sup></strong> 
                         </p>
-                        <p><small><em><sup>*</sup>Starting in February 2022 Intake Sessions will be $175.00</em></small></p>
                         <p>
-                            Follow-up Sessions: <strong>$125.00<sup>**</sup></strong>
+                            Follow-up Sessions: <strong>$135.00<sup>**</sup></strong>
                         </p>
                         <p>
                             Payment is expected at the time of service. I accept
                             cash, check, or credit card payments.
                         </p>
-                        <p><small><em><sup>**</sup>Starting in February 2022, Follow-up Sessions will be $135.00</em></small></p>
                     </RightOffset>
                 </SingleColumn>
 
