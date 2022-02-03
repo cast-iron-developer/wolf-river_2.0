@@ -93,10 +93,10 @@ const Services = () => {
                             Fees:
                         </h5>
                         <p>
-                            Intake Session: <strong>$175.00<sup>*</sup></strong> 
+                            Intake Session: <strong>$175.00</strong> 
                         </p>
                         <p>
-                            Follow-up Sessions: <strong>$135.00<sup>**</sup></strong>
+                            Follow-up Sessions: <strong>$135.00</strong>
                         </p>
                         <p>
                             Payment is expected at the time of service. I accept
