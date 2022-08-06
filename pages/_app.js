@@ -1,5 +1,6 @@
 import "../assets/scss/style.scss";
 import "../assets/fonts/typography.css";
+import "../assets/scss/thirdParty.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {

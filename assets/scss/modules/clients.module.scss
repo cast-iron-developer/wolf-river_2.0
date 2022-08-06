@@ -1,0 +1,12 @@
+@use "../misc/colors.scss" as *;
+
+.button {
+  display: block;
+  padding: 15px 25px;
+  background-color: #de6a26;
+  border-radius: 5px;
+  color: $white;
+  font-weight: bold;
+  text-decoration: none;
+  max-width: 285px;
+}

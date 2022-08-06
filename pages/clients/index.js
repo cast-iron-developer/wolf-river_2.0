@@ -6,6 +6,8 @@ import Layout from "../../assets/components/layout";
 import SingleColumn from "../../assets/components/singleColumn";
 import LeftOffset from "../../assets/components/partials/LeftOffset";
 
+import classes from "../../assets/scss/modules/clients.module.scss";
+
 const Clients = () => (
     <>
         <Head>
@@ -24,7 +26,8 @@ const Clients = () => (
                     href="https://krystin-coldwell.clientsecure.me/"
                     passHref={true}
                 >
-                    Schedule Appointment*
+                    <a className={classes.button}
+                       target="_blank">Schedule Appointment*</a>
                 </Link>
                 <p>
                     <small>
