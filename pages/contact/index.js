@@ -62,9 +62,9 @@ const LeftContact = () => (
 const RightContact = () => (
     <>
         <p className="margin-top-0 text-no-underline text-white">
-            <Link
-                href="www.google.com/maps/dir/284+German+Oak+Dr+%23100,+Cordova,+TN+38018/@35.1231417,-89.7991513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x887f9b8ba5d99feb:0x56fa7567c22187db!2m2!1d-89.7969626!2d35.1231417"
-                passHref={true}
+            <a
+                href="https://goo.gl/maps/idFvFZf2gi7Zaq1F9"
+                target="_blank"
             >
                 <a
                     className="text-white text-no-underline"
@@ -73,20 +73,17 @@ const RightContact = () => (
                     rel="noreferrer"
                     title="Wolf River Psychological Services Location"
                 >
-                    284 German Oak Drive <br />
-                    Suite 100 <br />
-                    Cordova, TN 38018
+                    5050 Poplar Ave. <br />
+                    Suite 405 <br />
+                    Memphis, TN 38157
                 </a>
-            </Link>
+            </a>
         </p>
         <p>
             Phone:
             <Link href="tel:+9013007320">
                 <a className="text-white text-no-underline"> (901) 300-7320</a>
             </Link>
-        </p>
-        <p>
-            Fax: <strong>(901) 249-5637</strong>
         </p>
     </>
 );
