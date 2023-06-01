@@ -65,6 +65,7 @@ const RightContact = () => (
             <a
                 href="https://goo.gl/maps/idFvFZf2gi7Zaq1F9"
                 target="_blank"
+                rel="noreferrer"
             >
                 <a
                     className="text-white text-no-underline"
