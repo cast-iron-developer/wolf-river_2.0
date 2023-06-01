@@ -25,7 +25,7 @@ const Contact = () => {
                                 local Emergency Department for evaluation.
                             </strong>
                             You can also reach the National Suicide Prevention
-                            Lifeline at:
+                            Lifeline at: 
                             <Link href="tel:18002738255">
                                 <a
                                     className="phoneLink"
