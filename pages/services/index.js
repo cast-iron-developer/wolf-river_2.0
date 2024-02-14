@@ -96,7 +96,7 @@ const Services = () => {
                             Intake Session: <strong>$175.00</strong> 
                         </p>
                         <p>
-                            Follow-up Sessions: <strong>$135.00</strong>
+                            Follow-up Sessions: <strong>150.00</strong>
                         </p>
                         <p>
                             Payment is expected at the time of service. I accept
