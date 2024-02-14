@@ -6,7 +6,7 @@
   "author": "Sam O'Donnell",
   "scripts": {
     "dev": "node --openssl-legacy-provider ./node_modules/.bin/next dev",
-    "build": "node --openssl-legacy-provider ./node_modules/.bin/next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
